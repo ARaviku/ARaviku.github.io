@@ -102,14 +102,14 @@ top: 64%;
 }
 .carousel-indicators li { 
   background-color: rgba(0,0,0,0);
-  border: 1px solid #FEE16F;
+  border: 1px solid #e0ddcf;
   border-radius: 0;
 }
 .carousel-indicators .active { 
   background-color: #FEE16F;
 }
 .caption h2{
-color:#FFE270;
+color:#eec937;
 line-height:45px;
 font-size: 50px;
 }
@@ -127,7 +127,7 @@ font-size: 50px;
 	max-width: 480px;
 	max-height: 360px;
 	width: 48%;
-	background: #3085a3;
+	background: #157a9e;
 	text-align: center;
 	cursor: pointer;
 }
@@ -142,7 +142,7 @@ font-size: 50px;
 
 .grid figure figcaption {
 	padding: 2em;
-	color: #fff;
+	color: #e0dada;
 	text-transform: uppercase;
 	font-size: 1.25em;
 	-webkit-backface-visibility: hidden;
@@ -311,7 +311,7 @@ p {
 ---------------------------------*/
 
 #header_wrapper {
-    background: #000;
+    background: #080808;
     padding: 15px 0px;
 	
 	box-shadow: 1px 1px 4px rgba(60, 60, 60, 0.44);
@@ -328,7 +328,7 @@ p {
 	
     font-size: 28px;
     line-height: 50px;
-    color: #FF6C71;
+    color: #050404;
 }
 
 .res-nav_click {
@@ -443,7 +443,7 @@ p {
   width: 140px;
   height: 140px;
   overflow: hidden;
-  border: 8px dotted rgba(255, 255, 255, 0.23);
+  border: 8px dotted rgba(143, 129, 129, 0.23);
   margin: 0 auto 20px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
 }
@@ -639,7 +639,7 @@ div#main-nav {
 
  
 
-.service_icon span {
+/* .service_icon span {
     background: transparent; 
     display: block;
     height: 95px;
@@ -648,7 +648,7 @@ div#main-nav {
     border: 1px solid #FFFFFF;
     border-radius: 50%;
     padding: 6px 0 0;
-}
+} */
 
 .service_icon i {
   color: #FEE16F;
