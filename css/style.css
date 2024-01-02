@@ -127,7 +127,7 @@ font-size: 50px;
 	max-width: 480px;
 	max-height: 360px;
 	width: 48%;
-	background: #157a9e;
+	background: #e2e6e7;
 	text-align: center;
 	cursor: pointer;
 }
@@ -198,18 +198,18 @@ font-size: 50px;
 
 figure.effect-oscar {
 	/* background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%); */
-	background: linear-gradient(45deg, #22682a 0%,#9b4a1b 40%,#3a342a 100%);
+	/* background: linear-gradient(45deg, #22682a 0%,#9b4a1b 40%,#3a342a 100%); */
 }
 
 figure.effect-oscar img {
-	opacity: 0.9;
-	-webkit-transition: opacity 0.35s;
+	opacity: 1;
+	-webkit-transition: opacity 0s;
 	transition: opacity 0.35s;
 }
 
 figure.effect-oscar figcaption {
 	padding: 3em;
-	background-color: rgba(53, 46, 15, 0.58);
+	background-color: rgba(6, 5, 0, 0.58);
 	-webkit-transition: background-color 0.35s;
 	transition: background-color 0.35s;
 }
@@ -220,7 +220,7 @@ figure.effect-oscar figcaption::before {
 	right: 30px;
 	bottom: 30px;
 	left: 30px;
-	border: 1px solid #fff;
+	border: 1px solid #f0c906;
 	content: '';
 }
 
@@ -245,7 +245,7 @@ figure.effect-oscar p {
 figure.effect-oscar:hover h2 {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
-	color: #FFFFFF;
+	color: #BEA726;
 }
 
 figure.effect-oscar:hover figcaption::before,
@@ -253,15 +253,15 @@ figure.effect-oscar:hover p {
 	opacity: 1;
 	-webkit-transform: scale(1);
 	transform: scale(1);
-	color:#fff;+++++++
+	color:#BEA726;
 }
 
 figure.effect-oscar:hover figcaption {
-	background-color: rgba(58,52,42,0);
+	background-color: rgba(231, 151, 12, 0);
 }
 
 figure.effect-oscar:hover img {
-	opacity: 0.4;
+	opacity: 1;
 }
 
 /* Styles
@@ -2476,3 +2476,38 @@ width: 99%;
 display:none;
 }
 }
+
+#Courses {
+  background-color: #000; /* Black background */
+  color: #BEA726; /* White text */
+  padding: 20px 0; /* Some padding around the section */
+}
+
+#Courses h2 {
+  text-align: center;
+  color: #BEA726; /* White text for the heading */
+}
+
+#Courses .courses-list {
+  background-color: #000; /* Black background for the course list */
+  border-radius: 5px; /* Optional: rounds the corners of the black box */
+  padding: 20px; /* Padding inside the black box */
+  margin-top: 20px; /* Space between the title and the course list */
+}
+
+#Courses .courses-list ul {
+  list-style-type: none; /* Removes default list styling */
+  padding: 0; /* Removes default padding */
+}
+
+#Courses .courses-list li {
+  background-color: #000; /* Ensures that list items have a black background */
+  color: #fff; /* White text for list items */
+  padding: 10px 0; /* Padding for each list item */
+  /* border-bottom: 1px solid #fff; Optional: adds a divider between items */
+}
+
+#Courses .courses-list li:last-child {
+  border-bottom: none; /* Removes the border from the last item */
+}
+
