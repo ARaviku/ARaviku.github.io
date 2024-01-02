@@ -1,17 +1,44 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Wheel Offset Project</title>
-  <!-- Include your stylesheet here -->
+  <style>
+    body {
+      background-color: #000; /* Black background */
+      color: #fff; /* White text for other descriptions */
+      font-family: Arial, sans-serif; /* A default font, change as needed */
+    }
+
+    .project-container h1 {
+      color: #ff0; /* Yellow color for the main heading */
+      font-size: 2em; /* Larger font size for the heading */
+    }
+
+    .project-description p {
+      color: #fff; /* White color for the description */
+      font-size: 1.2em; /* Larger font size for the description */
+    }
+
+    iframe {
+      width: 100%; /* Responsive width */
+      height: 500px; /* Larger fixed height, adjust as needed */
+      max-width: 800px; /* Maximum size of the video, adjust as needed */
+      display: block;
+      margin: 20px auto; /* Centering the iframe */
+    }
+  </style>
 </head>
 <body>
   <div class="project-container">
     <h1>Wheel Offset Project</h1>
     <!-- Embed YouTube video -->
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/cIq6UMPxI4c?si=-Tt-eD8MSYgUFnVk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    <div class="project-description">
+    <iframe src="https://www.youtube.com/embed/cIq6UMPxI4c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="project-description">
       <p>
-        In the Wheel Offset Project, I accurately measured variations in wheel mating surfaces during the transition from summer to winter tires. Leveraging point cloud data from the OakD-SR stereo camera, an advanced YOLO model, and other point cloud filtering algorithms, I identified the exact locations of the wheel center, lug holes, and mating surfaces. Utilizing RANSAC and other point cloud algorithms, I precisely detected the mating plane of the wheel, significantly enhancing the tire swapping process with millimeter-level precision.</p>
+        In the Wheel Offset Project, I accurately measured variations in wheel mating surfaces during the transition from summer to winter tires. Leveraging point cloud data from the OakD-SR stereo camera, an advanced YOLO model, and other point cloud filtering algorithms, I identified the exact locations of the wheel center, lug holes, and mating surfaces. Utilizing RANSAC and other point cloud algorithms, I precisely detected the mating plane of the wheel, significantly enhancing the tire swapping process with millimeter-level precision.
+      </p>
       <!-- Add more content as needed -->
     </div>
   </div>
