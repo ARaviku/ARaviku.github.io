@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,6 +27,11 @@
       display: block;
       margin: 20px auto; /* Centering the iframe */
     }
+
+    /* You may want to add some spacing between projects */
+    .project-container + .project-container {
+      margin-top: 40px; /* This adds space between the projects */
+    }
   </style>
 </head>
 <body>
@@ -39,8 +43,41 @@
       <p>
         In the Wheel Offset Project, I accurately measured variations in wheel mating surfaces during the transition from summer to winter tires. Leveraging point cloud data from the OakD-SR stereo camera, an advanced YOLO model, and other point cloud filtering algorithms, I identified the exact locations of the wheel center, lug holes, and mating surfaces. Utilizing RANSAC and other point cloud algorithms, I precisely detected the mating plane of the wheel, significantly enhancing the tire swapping process with millimeter-level precision.
       </p>
+    </div>
+  </div>
+
+  <!-- Wheel Pick and Place Project -->
+  <div class="project-container">
+    <h1>Wheel Pick and Place Project</h1>
+    <!-- Embed YouTube video -->
+    <iframe src="https://www.youtube.com/embed/HSIquAqb8eU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="project-description">
+      <p>
+        The successful completion of the wheel offset project served as a proof of concept, leading to this next
+        endeavor. The existing system at RoboTire utilized Zivid cameras, which cost around $12,000, and were
+        known for their excellent point cloud capabilities and off-the-shelf functionalities for completing the
+        sequences of tire changing in cars. During my internship, I was able to replace one of their vital
+        functions—picking the wheel from the floor and placing it precisely on the hub—all with sub-millimeter
+        level precision. This was achieved utilizing the OakD-SR camera, which costs about $300. This engaging
+        and fun project saw me leveraging the YOLO model, point cloud data, OpenCV, Open3D, mathematical
+        geometries, and numpy to reach the desired results.</p>
       <!-- Add more content as needed -->
     </div>
   </div>
+
+  <!-- Lug Segmentation Project -->
+  <div class="project-container">
+    <h1>Lug Segmentation</h1>
+    <!-- Display image -->
+    <img src="img/segmentation.png" alt="Lug Segmentation" title="Lug Segmentation at RoboTire" style="width:50%; max-width:800px; height:auto; display:block; margin:20px auto;">
+    <div class="project-description">
+      <p>
+        I also worked on YOLO segmentation to extract the accurate shape of the lug nut, rather than just using a bounding box, which opens up new applications at RoboTire.
+      </p>
+      <!-- Add more content as needed -->
+    </div>
+  </div>
+
+
 </body>
 </html>
