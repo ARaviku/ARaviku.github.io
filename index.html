@@ -98,7 +98,7 @@
         </div>
         <div class="col-md-3">
 		<div class="service_icon icon3  delay-03s animated wow zoomIn"> 
-      <span><img src="img/ROS.png" alt="ROS" width="150" height="30"></span> 
+      <span><img src="img/ROS.png" alt="ROS" width="100" height=""></span> 
     </div>
     <div class="service_block">
             <h3 class="animated fadeInUp wow">ROS</h3>
@@ -167,7 +167,6 @@
     <!-- Title -->
     <div class="section-title">
       <h2>PROJECTS</h2>
-	<h6>My primary focus in robotics centers on perception and vision, as well as localization and navigation. I'm actively delving into various motion planning algorithms and continually broadening my expertise. Looking ahead, I'm eager to venture into diverse domains within robotics and embark on more innovative projects.</h6>
 	  
     </div>
     <!--/Title --> 
@@ -182,9 +181,9 @@
     
     <div id="filters" class="sixteen columns">
       <ul class="clearfix">
-        <li><a id="all" href="#" data-filter="*" class="active">
+        <!-- <li><a id="all" href="#" data-filter="*" class="active">
           <h5>All</h5>
-          </a></li>
+          </a></li> -->
         <li><a class="Perception" href="#" data-filter=".Perception">
           <h5>Perception</h5>
           </a></li>
@@ -206,17 +205,19 @@
 
    
     <!-- Portfolio Wrapper -->
-    <div class="isotope grid" id="portfolio_wrapper" style="margin-right:  -50px; display: grid; grid-template-columns: repeat(2, 1fr);">  
+    <div class="isotope grid" id="portfolio_wrapper" style="margin-right: -50px; margin-left: -50px; display: grid; grid-template-columns: repeat(2, 1fr);">  
       <div class="portfolio-item-container Perception ">
         <a href="wheel-offset-project.html" target="_blank"> 
         <figure class="portfolio-item effect-oscar">
           <div class="portfolio_img"> <img src="img/wheel_offset.png" alt="Wheel Offset"> 
           </div>
         </figure>
-        </a>
+
         <div class="item-description">
           <h3>Wheel Offset</h3>
-          <p>This project focuses on developing precise offset calculations for wheels in automotive applications.</p>
+        </a>
+          <p>
+            This project is centered on developing precise offset calculations for swapping between summer and winter tires in automotive applications, utilizing point cloud data and filtering algorithms to achieve millimeter-level precision.</p>
         </div>
       </div>
           
@@ -231,7 +232,7 @@
       <!--/Portfolio Item --> 
       <div class="item-description">
         <h3>Wheel Pick & Place</h3>
-        <p>This project focuses on developing precise offset calculations for wheels in automotive applications.</p>
+        <p>The Wheel Pick & Place project built on the foundation of the previous wheel offset initiative, demonstrating a cost-effective solution to RoboTire's tire changing sequence. By integrating a $300 OakD-SR camera in place of the expensive $12,000 Zivid cameras, the project maintained sub-millimeter precision in lifting wheels from the floor and accurately placing them on car hubs. This venture combined the YOLO model, point cloud data, OpenCV, Open3D, mathematical geometry, and numpy to achieve high precision at a fraction of the cost.</p>
       </div>
       </div>
 
@@ -246,7 +247,7 @@
       <!--/Portfolio Item--> 
       <div class="item-description">
         <h3>Lug Segmentation</h3>
-        <p>This project focuses on developing precise offset calculations for wheels in automotive applications.</p>
+        <p>The Lug Segmentation project refined object detection by transitioning from bounding box approaches to precise YOLO-based shape extraction of lug nuts. This advancement enables more accurate and application-specific functionalities at RoboTire.</p>
       </div>
       </div>
 
@@ -261,7 +262,7 @@
       <!-- Portfolio Item --> 
       <div class="item-description">
         <h3>A* Algorithm</h3>
-        <p>This project focuses on developing precise offset calculations for wheels in automotive applications.</p>
+        <p>Implemented two variants of the A* algorithm for a PR2 robot to navigate collision-free paths in a given environment, distinguishing between "4-connected" and "8-connected" neighbors to ascertain the shortest route from start to goal.</p>
       </div>
       </div>
 
@@ -276,7 +277,7 @@
         <!--/Portfolio Item --> 
         <div class="item-description">
           <h3>RRT Algorithm</h3>
-          <p>This project focuses on developing precise offset calculations for wheels in automotive applications.</p>
+          <p>Implemented the RRT-Connect algorithm for a 6-DOF PR2 robot arm, planning collision-free paths in configuration space with a step size of 0.05rad and a 10% goal bias. Additionally, a shortcut smoothing algorithm was applied over 150 iterations to optimize the path, visually distinguishing the original end-effector path in red and the shortcut-smoothed path in blue in the viewer.</p>
         </div>
       </div>
 
@@ -291,7 +292,8 @@
         <!--/Portfolio Item --> 
         <div class="item-description">
           <h3>Grasping Manipulation</h3>
-          <p>This project focuses on developing precise offset calculations for wheels in automotive applications.</p>
+          <p>
+            Implemented friction cone calculation and force closure evaluation for a Robotiq gripper and Kuka iiwa arm in PyBullet, focusing on discretizing the friction cone with varying vector quantities.</p>
         </div>
       </div>
 
@@ -306,7 +308,8 @@
         <!--/Portfolio Item --> 
         <div class="item-description">
           <h3>Kimera VIO</h3>
-          <p>This project focuses on developing precise offset calculations for wheels in automotive applications.</p>
+          <p>
+            The project involved creating a real-time Visual Inertial Odometry (VIO) system for a drone, utilizing Kimera VIO and Intel RealSense D455 on a Jetson Xavier platform. It was benchmarked against Vicon's ground truth data to effectively identify dynamic obstacles for efficient path planning and navigation. The system's components were containerized using Docker to streamline the deployment of ROS, RealSense, and Kimera modules on the Jetson Xavier.</p>
         </div>
       </div>
 
@@ -321,7 +324,7 @@
         <!--/Portfolio Item --> 
         <div class="item-description">
           <h3>VINS Fusion</h3>
-          <p>This project focuses on developing precise offset calculations for wheels in automotive applications.</p>
+          <p>Implemented a real-time VIO system on a quadrotor using VINS Fusion with Intel RealSense D455 on Jetson Xavier, benchmarked against Vicon for ground truth accuracy. The system integrated Octomap to precisely identify dynamic obstacles, enhancing navigation, and was containerized using Docker for streamlined deployment.</p>
         </div>
       </div>
 
@@ -336,7 +339,8 @@
         <!--/Portfolio Item --> 
         <div class="item-description">
           <h3>SLAM</h3>
-          <p>This project focuses on developing precise offset calculations for wheels in automotive applications.</p>
+          <p>
+            Executed 2D and 3D pose estimation using GTSAM for the Intel Research Lab and parking garage datasets, focusing on batch and incremental solutions. This involved implementing pose graph optimization in Python and scripting to visualize both unoptimized and optimized trajectories.</p>
         </div>
       </div>
 
@@ -351,7 +355,7 @@
         <!--/Portfolio Item -->
         <div class="item-description">
           <h3>Masked LIOSAM</h3>
-          <p>This project focuses on developing precise offset calculations for wheels in automotive applications.</p>
+          <p>Engineered a SLAM system by integrating SECOND object detection with LIO-SAM, improving localization accuracy by effectively filtering moving objects in point cloud data, enhancing the capabilities of standard LIO-SAM.</p>
         </div>
       </div>
 
@@ -367,7 +371,7 @@
         <!--/Portfolio Item --> 
         <div class="item-description">
           <h3>3D bounding Box Estimation</h3>
-          <p>This project focuses on developing precise offset calculations for wheels in automotive applications.</p>
+          <p>Evaluated 3D bounding box estimation on the KITTI 3D dataset using MobileNetv2 and VGG architectures. Focused on feature extraction from monocular images, with analysis involving training loss and 2D bird's eye view representations, ultimately demonstrating MobileNetv2's enhanced accuracy over VGG.</p>
         </div>
       </div>
 
@@ -382,7 +386,7 @@
         <!--/Portfolio Item --> 
         <div class="item-description">
           <h3>GANs</h3>
-          <p>This project focuses on developing precise offset calculations for wheels in automotive applications.</p>
+          <p>Successfully replicated "Region-Based Semantic Factorization in GANs," refining code for facial feature manipulation in images, and conducting evaluations using FID, Masked MSE, and ID metrics.</p>
         </div>
       </div>
 
@@ -398,7 +402,7 @@
         <!--/Portfolio Item --> 
         <div class="item-description">
           <h3>Phone Detection</h3>
-          <p>This project focuses on developing precise offset calculations for wheels in automotive applications.</p>
+          <p>Developed a visual object detection system prototype to locate phones using single RGB images, employing YOLO model for detection. Innovatively created YOLO-compatible labels through classical computer vision techniques and OpenCV, instead of standard labeling tools, leading to a unique blend of traditional and contemporary object detection methodologies.</p>
         </div>
       </div>
 
@@ -413,7 +417,7 @@
       <!--/Portfolio Item --> 
         <div class="item-description">
           <h3>IOS App-Dev</h3>
-          <p>This project focuses on developing precise offset calculations for wheels in automotive applications.</p>
+          <p></p>
         </div>
       </div>
 
@@ -428,7 +432,7 @@
         <!--/Portfolio Item --> 
         <div class="item-description">
           <h3>FEA Scaffolds</h3>
-          <p>This project focuses on developing precise offset calculations for wheels in automotive applications.</p>
+          <p>Conducted Finite Element Analysis (FEA) to optimize the design and structural integrity of engineered scaffolds, ensuring robustness and suitability for their intended biomedical applications.</p>
         </div>
       </div>
 
@@ -442,7 +446,7 @@
         </a>
         <div class="item-description">
           <h3>Orthodontic Vibration Device</h3>
-          <p>This project focuses on developing precise offset calculations for wheels in automotive applications.</p>
+          <p>Developed an affordable mouthpiece to expedite tooth alignment in brace-wearers, utilizing low-intensity vibrations proven to stimulate bone growth.</p>
         </div>
       </div>
     </div>
