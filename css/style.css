@@ -179,7 +179,7 @@ figure.effect-oscar {
 /* Styles
 ---------------------------------*/
 body {
-    background: #3c3838;
+    background: #575756;
     font-family: 'Raleway','Open Sans', sans-serif;
     font-size: 17px;
     font-weight: normal;
@@ -277,6 +277,7 @@ p {
 
 .navbar-inverse .navbar-nav > li > a {
     color: #F7F7F7;
+    font-size: 18px;
 }
 
 .navStyle {
@@ -1114,6 +1115,7 @@ background-position-y: 70px;
     margin: 0 0 15px;
     text-align: center;
     text-transform: uppercase;
+    margin-top: 25px;
 }
 
 .section-title span {
@@ -1501,7 +1503,7 @@ div.mc-image {
     height:100%;
     left:1px;
     top:0;
-    border-right:1px solid #F74D4D;
+    border-right:1px solid #BEA726;
     z-index:-1;
 } 
 
@@ -1513,7 +1515,7 @@ div.mc-image {
     height:100px;
     left:1px;
     bottom:-105px;
-    border-right:1px dashed #F74D4D;
+    border-right:1px solid #BEA726;
     z-index:-1;
 } 
 
@@ -1527,7 +1529,7 @@ div.mc-image {
     font-size:21px;
     font-weight:400;
     color: #000;
-    background: #FEE16F;
+    background: #BEA726;
     border-radius:5px;
 }
 
@@ -1547,7 +1549,7 @@ div.mc-image {
     padding-left:100px;
     background: #000000;
     border-radius:10px;
-    box-shadow:-5px 5px 0 rgba(0,0,0,0.08);
+    box-shadow:-5px 5px 0 rgba(240, 216, 6, 0.08);
     -webkit-transition:all .3s ease-out;
     transition:all .3s ease-out;
 }
@@ -1559,7 +1561,7 @@ div.mc-image {
 
 .news-item.right .news-content {
     margin:20px 0 0 30px;
-    box-shadow:5px 5px 0 rgba(0,0,0,0.08);
+    box-shadow:5px 5px 0 rgba(240, 216, 6, 0.08);
 }
 
 .news-item .news-content:after {
@@ -1616,7 +1618,7 @@ div.mc-image {
     right:auto;
 }
 
-.news-content .date {
+/* .news-content .date {
     position:absolute;
     width:80px;
     height:80px;
@@ -1625,31 +1627,37 @@ div.mc-image {
     color: #FEE16F;
     -webkit-transition:color .3s ease-out;
     transition:color .3s ease-out;
-}
+} */
 
-.news-item:hover .news-content .date {
+.news-item:hover .news-content {
     color:#fff;
 }
 
-.news-content .date p{
-    margin:0;
-    font-size: 38px;
+.news-content p{
+    margin-left:-70px;
+    font-size: 20px;
     font-weight: 400;
     line-height:48px;
 }
+.news-content h2{
+    margin-left:-70px;
+    font-size: 30px;
+    font-weight: 400;
+}
 
-.news-content .date small{
+.news-content small{
     margin:0;
     font-size:26px;
     font-weight:300;
     line-height:24px;
+    text-align: justify;
 }
 
 .news-content .news-title{
-    font-size:24px;
-    font-weight:300;
-    text-align: left;
-    margin-bottom: 4px;
+    font-size:22px;
+    font-weight:350;
+    text-align: justify;
+    margin-bottom: 3px;
     color: #FFFFFF;
 }
 
@@ -1659,6 +1667,7 @@ div.mc-image {
     font-weight:300;
     letter-spacing:0.02em;
     margin-bottom:10px;
+    color: #919191;
 }
 
 .news-content .read-more,
@@ -1685,12 +1694,12 @@ div.mc-image {
 }
 
 .news-content .read-more:hover {
-    padding-left:7px;
+    padding-left:1px;
 }
 
 .news-content .read-more:after{
     content:'\f054';
-    padding-left:15px;
+    padding-left:1px;
     font-family:'FontAwesome';
     font-size:21px;
     line-height:21px;
@@ -1701,7 +1710,7 @@ div.mc-image {
 }
 
 .news-content .read-more:hover:after{
-    padding-left:20px;
+    padding-left:1px;
 }
 
 .news-item:hover .news-content .read-more:after{
@@ -1747,7 +1756,7 @@ div.mc-image {
     font-size:32px;
     line-height:80px;
     text-align:center;
-    color:#F74D4D;
+    color:#BEA726;
     -webkit-transform:scale(0);
     transform:scale(0);
     opacity:0;
@@ -2030,3 +2039,20 @@ display:none;
     text-align: justify;
 }
 
+#profileImage {
+    display: block; /* This makes it possible to apply margin: auto */
+    margin: auto; /* This centers the image in the container */
+    max-width: 100%; /* This makes the image responsive */
+    height: 100%; /* This maintains the aspect ratio of the image */
+    margin-top: 100px;
+    margin-right: 100px;
+    border-radius: 150%;
+}
+
+/* .circular-image {
+    width: 500px; 
+    height: 500px; 
+    border-radius: 100%;
+    margin-top: 100px; 
+    object-fit: cover;
+} */
