@@ -1929,22 +1929,38 @@ display:none;
 }
 
 #Courses {
-  background-color: #000; /* Black background */
-  color: #BEA726; /* White text */
+  background-color: #575756; /* Black background */
+  color: #fff; /* White text */
   padding: 20px 0; /* Some padding around the section */
 }
 
 #Courses h2 {
-  text-align: center;
-  color: #BEA726; /* White text for the heading */
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 34px;
+    letter-spacing: -1px;
+    margin: 0 0 15px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 25px;
 }
 
-#Courses .courses-list {
+#Courses  {
   background-color: #000; /* Black background for the course list */
-  border-radius: 5px; /* Optional: rounds the corners of the black box */
+  border-radius: 20px; /* Optional: rounds the corners of the black box */
   padding: 20px; /* Padding inside the black box */
   margin-top: 20px; /* Space between the title and the course list */
+  margin-left: 300px;
+  margin-right: 300px;
+  border: 3px solid #BEA726 ;
 }
+.courses-list {
+    background-color: #000; /* Black background for the course list */
+    border-radius: 20px; /* Optional: rounds the corners of the black box */
+    padding: 20px; /* Padding inside the black box */
+    margin-top: 20px; /* Space between the title and the course list */
+    /* border: solid #BEA726 ; */
+  }
 
 #Courses .courses-list ul {
   list-style-type: none; /* Removes default list styling */
@@ -2046,7 +2062,7 @@ display:none;
     height: 100%; /* This maintains the aspect ratio of the image */
     margin-top: 100px;
     margin-right: 100px;
-    border-radius: 150%;
+    /* border-radius: 150%; */
 }
 
 /* .circular-image {
@@ -2056,3 +2072,23 @@ display:none;
     margin-top: 100px; 
     object-fit: cover;
 } */
+
+
+#Courses .courses-list .course-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* adjust as needed */
+  }
+  
+  #Courses .courses-list .course-item img {
+    width: 100px; /* adjust as needed */
+    height: auto;
+    margin-right: 10px; /* adjust as needed */
+  }
+  
+  #Courses .courses-list .course-item a {
+    text-decoration: none;
+    color: #BEA726; /* adjust as needed */
+    /* other styles as needed */
+  }
+  
