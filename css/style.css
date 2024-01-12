@@ -179,7 +179,7 @@ figure.effect-oscar {
 /* Styles
 ---------------------------------*/
 body {
-    background: #575756;
+    background: #6e6a6a;
     font-family: 'Raleway','Open Sans', sans-serif;
     font-size: 17px;
     font-weight: normal;
@@ -1928,55 +1928,32 @@ display:none;
 }
 }
 
-#Courses {
-  background-color: #575756; /* Black background */
-  color: #fff; /* White text */
-  padding: 20px 0; /* Some padding around the section */
-}
 
-#Courses h2 {
-    color: #ffffff;
-    font-family: 'Raleway', sans-serif;
-    font-size: 34px;
-    letter-spacing: -1px;
-    margin: 0 0 15px;
-    text-align: center;
-    text-transform: uppercase;
-    margin-top: 25px;
-}
-
-#Courses  {
-  background-color: #000; /* Black background for the course list */
-  border-radius: 20px; /* Optional: rounds the corners of the black box */
-  padding: 20px; /* Padding inside the black box */
-  margin-top: 20px; /* Space between the title and the course list */
-  margin-left: 300px;
-  margin-right: 300px;
-  border: 3px solid #BEA726 ;
-}
-.courses-list {
+/* .courses-list {
     background-color: #000; /* Black background for the course list */
-    border-radius: 20px; /* Optional: rounds the corners of the black box */
-    padding: 20px; /* Padding inside the black box */
-    margin-top: 20px; /* Space between the title and the course list */
+    /* border-radius: 20px; Optional: rounds the corners of the black box */
+    /* padding: 20px; Padding inside the black box */
+    /* margin-top: 20px; Space between the title and the course list */
     /* border: solid #BEA726 ; */
-  }
+    /* border: solid 3px #BEA726; */
 
+  /* } */
+/* 
 #Courses .courses-list ul {
   list-style-type: none; /* Removes default list styling */
-  padding: 0; /* Removes default padding */
-}
+  /* padding: 0; Removes default padding */
+/* } */
 
-#Courses .courses-list li {
-  background-color: #000; /* Ensures that list items have a black background */
-  color: #fff; /* White text for list items */
-  padding: 10px 0; /* Padding for each list item */
+/* #Courses .courses-list li { */
+  /* background-color: #000; Ensures that list items have a black background */
+  /* color: #fff; White text for list items */
+  /* padding: 10px 0; Padding for each list item */
   /* border-bottom: 1px solid #fff; Optional: adds a divider between items */
-}
+/* } */
 
-#Courses .courses-list li:last-child {
-  border-bottom: none; /* Removes the border from the last item */
-}
+/* #Courses .courses-list li:last-child { */
+  /* border-bottom: none; Removes the border from the last item */
+/* } */ 
 
 /* Portfolio Grid */
 #portfolio_wrapper {
@@ -1997,18 +1974,21 @@ display:none;
 .portfolio-item-container {
     display: flex;
     align-items: center; /* This aligns the items vertically */
-    margin-bottom: 10px; /* Space between items */
+    margin-bottom: 10px; 
     margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    width: 100%;
+    column-count: 2;
+    margin-left: auto;
+    margin-right: auto; 
     justify-content: center; /* Center the items horizontally */
   }
+
   
  
   /* Description */
   .item-description {
     margin-left: 5px;
-    max-width: 500px; /* Set a max-width for the description if needed */
+    max-width: 600px; /* Set a max-width for the description if needed */
     color: #ffffff; /* White text color */
   }
   
@@ -2074,21 +2054,86 @@ display:none;
 } */
 
 
-#Courses .courses-list .course-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px; /* adjust as needed */
+#Courses {
+    background-color: #6e6a6a; /* Black background #6e6a6a #575756*/
+    color: #fff; /* White text */
+    padding: 20px 0; /* Some padding around the section */
+    
   }
   
-  #Courses .courses-list .course-item img {
-    width: 100px; /* adjust as needed */
-    height: auto;
-    margin-right: 10px; /* adjust as needed */
+  #Courses h2 {
+      color: #ffffff;
+      font-family: 'Raleway', sans-serif;
+      font-size: 34px;
+      letter-spacing: -1px;
+      margin: 0 0 15px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 25px;
+      
+  }
+  .accordion{
+    border: 10px solid #BEA726 ;
+    box-shadow:5px 5px 0 rgba(240, 216, 6, 0.08);
+    border-radius: 20px;
+  }
+/*   
+  #Courses  {
+    background-color: #000; 
+    border-radius: 20px; 
+    padding: 20px; 
+    margin-top: 20px; 
+    margin-left: 300px;
+    margin-right: 300px;
+    border: 3px solid #BEA726 ;
+  } */
+
+/* Add to your existing #Courses styles */
+.accordion-button {
+    background-color: #000000; /* Gray background */
+    color: #fff; /* White text */
+    padding: 10px 15px; /* Padding */
+    width: 100%; /* Full width */
+    text-align: left; /* Align text to the left */
+    border: none; /* No border */
+    outline: none; /* No outline */
+    transition: 0.4s; /* Animation transition */
+    display: flex; /* Flex display to align image and text */
+    align-items: center; /* Center items in the button */
+    cursor: pointer; /* Pointer cursor on hover */
+
   }
   
-  #Courses .courses-list .course-item a {
-    text-decoration: none;
-    color: #BEA726; /* adjust as needed */
-    /* other styles as needed */
+  /* Add 'active' class for the button when the content is shown */
+  .active, .accordion-button:hover {
+    background-color: #BEA726; /* Gold background for active/hover state */
   }
+  
+  .accordion-content {
+    padding: 0 18px; /* Padding */
+    background-color: #575756; /* Light grey background */
+    overflow: hidden; /* Hide the overflow */
+    transition: max-height 0.2s ease-out; /* Transition for the accordion opening */
+    max-height: 0; /* Set max-height to 0 */
+  }
+  
+  .accordion img {
+    margin-right: 10px; /* Space between image and text */
+    width: 50px; /* Smaller image size */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Add this to your existing CSS */
+/* :focus {
+    outline: 2px solid #575756;
+    border-radius: 10px; 
+  } */
+  
+*:focus {
+outline: none;
+}
+
+button:focus:not(:focus-visible) {
+outline: none;
+}
   

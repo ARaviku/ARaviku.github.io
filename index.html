@@ -421,7 +421,7 @@
       <!--/Portfolio Item --> 
         <div class="item-description">
           <h3>IOS App-Dev</h3>
-          <p></p>
+          <p>Created an application that identifies facial features from 3D point cloud data using Swift code, specifically tailored for iPad deployment. This application stands out by blending advanced 3D modeling techniques with traditional human anatomy study, enabling multidisciplinary applications such as a portable body-scanning system and detailed human model generation.</p>
         </div>
       </div>
 
@@ -474,52 +474,134 @@
 <section id="Courses">
   <div class="container">
     <h2>Courses</h2>
-    <div class="courses-list">
-      <div class="courses-list">
-        <!-- Math for Robotics -->
-        <div class="course-item">
+    <div class="accordion">
+      <!-- Math for Robotics -->
+      <div class="accordion-item">
+        <button class="accordion-button">
           <img src="img/rob501.jpg" alt="Math for Robotics">
-          <a href="https://github.com/michiganrobotics/rob501" target="_blank">Math for Robotics</a>
-        </div>
+          Math for Robotics
+        </button>
+        <div class="accordion-content">
+              <a href="https://github.com/michiganrobotics/rob501" target="_blank">Math for Robotics</a>
+              <ul>
+                  <li> Vector spaces, orthogonal bases, projection theorem, least squares, matrix factorizations, Kalman filter, probabilistic concepts, norms, convergent sequences, contraction mappings, Newton-Raphson algorithm, local vs global convergence, nonlinear optimization, convexity, linear programs, quadratic programs. </li>
+              </ul>
+          </div>
+      </div>
+      
+
         <!-- Programming for Robotics -->
-        <div class="course-item">
-          <img src="img/rob502.png" alt="Programming for Robotics">
+          <div class="accordion-item">
+            <button class="accordion-button">
+              <img src="img/rob502.png" alt="Programming for Robotics">
+              Programming for Robotics
+            </button>
+            <div class="accordion-content">
           <a href="https://berenson.robotics.umich.edu/courses/fall2022pfr/index.html" target="_blank">Programming for Robotics</a>
+          <ul>
+            <li> 
+              Types and Structs, Streams and Vectors, References, Const, Memory, Arrays, Pointers, Classes, Operators, Templates, Standard Template Library (STL), Inheritance, Polymorphism, Transforms, Eigen, Big O Notation, Recursion, CMake, shared pointers, Search Algorithms, Tree Search, Multithreading, Message Passing, Numpy, Pybullet.</li>
+        </ul>
         </div>
+      </div>
+
+
         <!-- Machine Learning -->
-        <div class="course-item">
-          <img src="img/GANs.png" alt="Machine Learning">
+        <div class="accordion-item">
+          <button class="accordion-button">
+            <img src="img/GANs.png" alt="Machine Learning">
+            Machine Learning
+          </button>
+          <div class="accordion-content">
           <a href="https://web.eecs.umich.edu/~girasole/teaching/553/" target="_blank">Machine Learning</a>
+          <ul>
+            <li>Classification, Unconstrained Optimization, Bayes Classifier, Linear Discriminant Analysis (LDA), Quadratic Discriminant Analysis (QDA), Logistic Regression, Linear Regression, Regularization, Separating Hyperplanes, Constrained Optimization, Support Vector Machines (SVM), Kernel Methods, Stochastic Gradient Descent (SGD), Multilayer Perceptron, Neural Networks, Deep Learning, Unsupervised Learning, Principal Component Analysis (PCA), Clustering, K-means, Gaussian Mixture Models, Matrix Completion, Nonlinear Dimensionality Reduction, Autoencoders. </li>
+        </ul>
         </div>
+        </div>
+
         <!-- Computer Vision -->
-        <div class="course-item">
-          <img src="img/3d-bounding-box.png" alt="Computer Vision">
+        <div class="accordion-item">
+          <button class="accordion-button">
+            <img src="img/3d-bounding-box.png" alt="Computer Vision">
+            Computer Vision
+          </button>
+          <div class="accordion-content">
           <a href="https://web.eecs.umich.edu/~fouhey/teaching/EECS442_W23/schedule.html" target="_blank">Computer Vision</a>
+          <ul>
+            <li>Intrinsics and Extrinsic Matrices, Filtering, Gradients, Detectors and Descriptors, Edge Detection, Gaussian Derivatives, Harris Corners, Scale-Space, Laplacian Blob Detection, SIFT, Transforms, Linear Regression, RANSAC, Hough Transform, Affine and Perspective Transforms, Optimization, Stochastic Gradient Descent (SGD), Convolutional Networks, Convolution, CNN Architectures, Segmentation, Detection, Image Synthesis, Transformers, Camera Calibration, Structure from Motion.</li>
+        </ul>
         </div>
+        </div>
+
         <!-- Mobile Robotics -->
-        <div class="course-item">
-          <img src="img/maskedliosam.png" alt="Mobile Robotics">
+        <div class="accordion-item">
+          <button class="accordion-button">
+            <img src="img/maskedliosam.png" alt="Mobile Robotics">
+            Mobile Robotics
+          </button>
+          <div class="accordion-content">
           <a href="https://github.com/UMich-CURLY-teaching/UMich-ROB-530-public" target="_blank">Mobile Robotics</a>
+          <ul>
+            <li>Kalman Filtering, Nonlinear Kalman Filtering, Particle Filtering, Rigid Body Motion, Transformation, Matrix Lie Groups, Robot Motion and Uncertainty Propagation, Invariant Extended Kalman Filter (EKF), Localization, Occupancy Grid Mapping (OGM), Robotic Mapping, Optimization, Pointcloud Registration I, RGB-D Visual Odometry, Graph-Based Simultaneous Localization and Mapping (SLAM).</li>
+        </ul>
         </div>
+        </div>
+
         <!-- Algorithmic Robotics -->
-        <div class="course-item">
-          <img src="img/RRT.png" alt="Algorithmic Robotics">
+        <div class="accordion-item">
+          <button class="accordion-button">
+            <img src="img/RRT.png" alt="Algorithmic Robotics">
+            Algorithmic Robotics
+          </button>
+          <div class="accordion-content">
           <a href="https://berenson.robotics.umich.edu/courses/fall2023iar/index.html" target="_blank">Algorithmic Robotics</a>
+          <ul>
+            <li>Transformations, Convexity and Optimization, Searching for a Path, Motion Planning for Point Robots, Motion Planning in Configuration Space, Motion Planning for Non-holonomic Systems, Inverse Kinematics, Grasping, Principal Component Analysis (PCA), Point Clouds, Bayesian Networks, Learning Probabilistic Models, Hidden Markov Models (HMMs), Bayes Filters and Kalman Filters, Unscented Kalman Filter (UKF) and Particle Filters, Markov Decision Processes (MDPs) and Partially Observable MDPs (POMDPs), Decision Trees and Support Vector Machines (SVMs), k-Nearest Neighbors (kNN). </li>
+        </ul>
         </div>
+        </div>
+
         <!-- Robotic Systems Laboratory -->
-        <div class="course-item">
-          <img src="img/armlab.png" alt="Robotic Systems Laboratory">
+        <div class="accordion-item">
+          <button class="accordion-button">
+            <img src="img/armlab.png" alt="Robotic Systems Laboratory">
+            Robotic Systems Laboratory
+          </button>
+          <div class="accordion-content">
           <a href="https://audio.robotics.umich.edu/210-rob-550.html" target="_blank">Robotic Systems Laboratory</a>
+          <ul>
+            <li>Transformations, Rigid Body Motion, Camera Model,  Forward Kinematics  and Inverse Kinematics, OpenCV, Image Segmentation, Blob Detection, CAD, Fusion 360, Sensor Fusion, Odometry, Motion Control, Simultaneous Localization and Mapping (SLAM), Bayesian Filters, Mapping, Occupancy Grids, Monte Carlo Localization, Action Model, Particle Filter, Particle Filter, Sensor Models, Configuration Space, Path Planning, Graphs, Dijkstra’s Algorithm, A* Algorithm. </li>
+        </ul>
         </div>
+        </div>
+
         <!-- Deep Learning/Robot Perceptio -->
-        <div class="course-item">
-          <img src="img/rob502.png" alt="Deep Learning/Robot Perception">
+        <div class="accordion-item">
+          <button class="accordion-button">
+            <img src="img/rob502.png" alt="Deep Learning/Robot Perception">
+            Deep Learning/Robot Perception
+          </button>
+          <div class="accordion-content">
           <a href="https://deeprob.org/w24/" target="_blank">Deep Learning/Robot Perception</a>
+          <ul>
+            <li> In progress ...</li>
+        </ul>
         </div>
+        </div>
+
         <!-- Directed Study with Prof. Dimitra Panagou -->
-        <div class="course-item">
-          <img src="img/kimera_vio.png" alt="Directed Study with Prof. Dimitra Panagou">
+        <div class="accordion-item">
+          <button class="accordion-button">
+            <img src="img/kimera_vio.png" alt="Directed Study with Prof. Dimitra Panagou">
+            Directed Study with Prof. Dimitra Panagou
+          </button>
+          <div class="accordion-content">
           <a href="https://github.com/ARaviku/VINS-Fusion" target="_blank">Directed Study with Prof. Dimitra Panagou</a>
+          <ul>
+            <li>  </li>
+        </ul>
+        </div>
         </div>
       </div>
     </div>
@@ -705,6 +787,26 @@
 <script src="js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script> 
 <script type="text/javascript" src="js/wow.js"></script> 
 <script type="text/javascript" src="js/custom.js"></script>
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var acc = document.getElementsByClassName("accordion-button");
+    for (var i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+  });
+</script>
+
 
 </body>
 </html>
